@@ -1,0 +1,11 @@
+{
+  "name": "mithril-toptal-demo",
+  "version": "1.0.0",
+  "description": "A serverless companion demo for the Mithril section of a front-end technology comparison article.",
+  "author": "Kevin Bloch",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/mithril": "^1.1.17"
+  }
+}
