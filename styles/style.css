@@ -161,7 +161,7 @@ body {
     transform: rotate(359deg); } }
 
 .spinner {
-  display: 'inline-flex'; }
+  display: inline-flex; }
 
 .spinner:after {
   content: ' ';
