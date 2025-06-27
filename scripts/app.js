@@ -28,17 +28,18 @@ const SearchResults = {
     current_query: '',
     fetch: q => {
         const last_query = q
-        return m.request({
+        return m
+          .request({
             method: "GET",
-            url: "https://codingthat-quick-json-back-end-2.glitch.me/posts",
-            params: { q }
-        })
-        .then(data => {
+            url: "https://wondrous-parfait-aaad17.netlify.app/posts",
+            params: { q },
+          })
+          .then((data) => {
             if (SearchResults.current_query === last_query) {
-                SearchResults.current_query = ''
-                SearchResults.raw_data = data
+              SearchResults.current_query = "";
+              SearchResults.raw_data = data;
             }
-        })
+          });
     },
     view: () => m("article.app-main", m(".post-list",
         typeof(SearchResults.raw_data) === 'undefined' // initial state only
